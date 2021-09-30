@@ -3,6 +3,16 @@
 
 <head>
 
+<!--bootstrap-->
+
+ <!-- For styling The <link /> will download the bootstrap CSS to the browser-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <!--Icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <!-- For interactivity The <script /> will download the bootstrap JS to the browser-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        
+
 <!-- Basic Page Needs
 ================================================== -->
 <title>White Doves</title>
@@ -400,120 +410,48 @@
 <!-- Content
 ================================================== -->
 <!-- Category Boxes -->
-<div class="section margin-top-65">
-	<div class="container">
-		<div class="row">
-			<div class="col-xl-12">
-
-				<div class="section-headline centered margin-bottom-15">
-					<h3>Popular Job Categories</h3>
-				</div>
-
-				<!-- Category Boxes Container -->
-				<div class="categories-container">
-
-					<!-- Category Box -->
-					<a href="jobs-grid-layout-full-page.html" class="category-box">
-						<div class="category-box-icon">
-							<i class="icon-line-awesome-file-code-o"></i>
-						</div>
-						<div class="category-box-counter">612</div>
-						<div class="category-box-content">
-							<h3>Web & Software Dev</h3>
-							<p>Software Engineer, Web / Mobile Developer & More</p>
-						</div>
-					</a>
-
-					<!-- Category Box -->
-					<a href="jobs-list-layout-full-page-map.html" class="category-box">
-						<div class="category-box-icon">
-							<i class="icon-line-awesome-cloud-upload"></i>
-						</div>
-						<div class="category-box-counter">113</div>
-						<div class="category-box-content">
-							<h3>Data Science & Analitycs</h3>
-							<p>Data Specialist / Scientist, Data Analyst & More</p>
-						</div>
-					</a>
-
-					<!-- Category Box -->
-					<a href="jobs-list-layout-full-page-map.html" class="category-box">
-						<div class="category-box-icon">
-							<i class="icon-line-awesome-suitcase"></i>
-						</div>
-						<div class="category-box-counter">186</div>
-						<div class="category-box-content">
-							<h3>Accounting & Consulting</h3>
-							<p>Auditor, Accountant, Fnancial Analyst & More</p>
-						</div>
-					</a>
-
-					<!-- Category Box -->
-					<a href="jobs-list-layout-1.html" class="category-box">
-						<div class="category-box-icon">
-							<i class="icon-line-awesome-pencil"></i>
-						</div>
-						<div class="category-box-counter">298</div>
-						<div class="category-box-content">
-							<h3>Writing & Translations</h3>
-							<p>Copywriter, Creative Writer, Translator & More</p>
-						</div>
-					</a>
-
-					<!-- Category Box -->
-					<a href="jobs-list-layout-2.html" class="category-box">
-						<div class="category-box-icon">
-							<i class="icon-line-awesome-pie-chart"></i>
-						</div>
-						<div class="category-box-counter">549</div>						
-						<div class="category-box-content">
-							<h3>Sales & Marketing</h3>
-							<p>Brand Manager, Marketing Coordinator & More</p>
-						</div>
-					</a>
-
-					<!-- Category Box -->
-					<a href="jobs-list-layout-1.html" class="category-box">
-						<div class="category-box-icon">
-							<i class="icon-line-awesome-image"></i>
-						</div>
-						<div class="category-box-counter">873</div>
-						<div class="category-box-content">
-							<h3>Graphics & Design</h3>
-							<p>Creative Director, Web Designer & More</p>
-						</div>
-					</a>
-
-					<!-- Category Box -->
-					<a href="jobs-list-layout-2.html" class="category-box">
-						<div class="category-box-icon">
-							<i class="icon-line-awesome-bullhorn"></i>
-						</div>
-						<div class="category-box-counter">125</div>
-						<div class="category-box-content">
-							<h3>Digital Marketing</h3>
-							<p>Darketing Analyst, Social Profile Admin & More</p>
-						</div>
-					</a>
-
-					<!-- Category Box -->
-					<a href="jobs-grid-layout-full-page.html" class="category-box">
-						<div class="category-box-icon">
-							<i class="icon-line-awesome-graduation-cap"></i>
-						</div>
-						<div class="category-box-counter">445</div>
-						<div class="category-box-content">
-							<h3>Education & Training</h3>
-							<p>Advisor, Coach, Education Coordinator & More</p>
-						</div>
-					</a>
-
-				</div>
-
-			</div>
-		</div>
-	</div>
-</div>
+ <div class="container px-4 py-5" id="hanging-icons">
+            <h1 class="pb-2 border-bottom">Job Categories</h1>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+              <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+                </div>
+                <div>
+                  <h2>Data Jobs</h2>
+                  <img src="./data-icon.svg" width="330" height="310"
+				  <p="">Data Science, Data Analyst, Data specialist, Machine Learning Engineer, Data Engineer & More.<p></p>
+                  <a href="#" class="btn btn-primary">
+                    Browse Jobs
+                  </a>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+                </div>
+                <div>
+                  <h2>Software Development Jobs</h2>
+                  <img src="./dev-icon.svg" width="330" height="310" <p="">Software Engineer, Front-end/Back-end Developer, Full-Stack Developer, Web Developer & More .<p></p>
+                  <a href="#" class="btn btn-primary">
+                    Browse Jobs
+                  </a>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"></use></svg>
+                </div>
+                <div>
+                  <h2>Product Jobs</h2>
+                  <img src="./product-icon.svg" width="330" height="310" <p="">Product Manager, Product Owner, Delivery Manager, User Experience Designer, Product Designer & More.<p></p>
+                  <a href="#" class="btn btn-primary">
+                    Browse Jobs
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 <!-- Category Boxes / End -->
 
 
