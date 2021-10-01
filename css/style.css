@@ -2187,8 +2187,8 @@ em.mm-counter+a.mm-fullsubopen+span {
 /* Footer
 ------------------------------------- */
 #footer {
-	background-color: #303030;
-	color: #c0c0c0;
+	background-color: #000000;
+	color: #898989;
 }
 
 #footer p { line-height: 26px; }
@@ -2328,12 +2328,12 @@ em.mm-counter+a.mm-fullsubopen+span {
 }
 
 .footer-social-links li a {
-	font-size: 20px;
-	padding: 0 10px;
+	font-size: 25px;
+	padding: 25px;
 	color: #fff;
 	display: inline-block;
 	transition: 0.3s;
-	opacity: 0.5;
+	opacity: 1;
 	transform: translate3d(0,-0.5px,0);
 }
 
@@ -2370,6 +2370,7 @@ em.mm-counter+a.mm-fullsubopen+span {
 	text-align: left;
 	margin: 0;
 	padding: 0;
+	font-weight: bold
 }
 
 .footer-links ul li {
@@ -2431,7 +2432,7 @@ em.mm-counter+a.mm-fullsubopen+span {
 	align-items: flex-start;
 }
 .newsletter input {
-	background: #262626;
+	background: #f7f7f7;
 	box-shadow: none;
 	margin-bottom: 0;
 }
