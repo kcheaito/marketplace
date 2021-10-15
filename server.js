@@ -15,7 +15,9 @@ const server = express();
 
 // Import user routes
 const userRoutes = require('./routes/user-routes.js');
-// Import the update user routes
+// Import job post routes
+const jobPostRoutes = require('./routes/jobPost-routes.js');
+// Import update user routes
 const userUpdateRoutes = require('./routes/user-update-routes.js');
 
 // Connect to MongoDB using mongoose
@@ -54,8 +56,11 @@ server.use(cors());
 // Configure for form data
 server.use(expressFormData.parse());
 // Configure for different routes
+// Configure for users route
 server.use('/users', userRoutes);
-//for users update
+// Configure for job post route
+server.use('/jobs', jobPostRoutes);
+// Configure for users update route
 server.use('/users', userUpdateRoutes);
 
 // A GET route
